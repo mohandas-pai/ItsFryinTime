@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { grey } from '@mui/material/colors';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Radio from '@mui/material/Radio';
@@ -7,9 +7,9 @@ import RadioGroup from '@mui/material/RadioGroup';
 const FryerForm = () => {
     const [selectedValue, setSelectedValue] = React.useState('a');
     const [userTemp, setUserTemp] = useState(190);
-    const [userTime, setUserTime] = useState(10);
-    const [temp, setTemp] = useState(0);
-    const [time, setTime] = useState(0);
+    const [userTime, setUserTime] = useState(12);
+    const [temp, setTemp] = useState(170);
+    const [time, setTime] = useState(9);
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
